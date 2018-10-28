@@ -1,4 +1,3 @@
-C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\bin\SportsStore.WebUI.dll
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\bin\SportsStore.WebUI.pdb
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\bin\Antlr3.Runtime.dll
@@ -40,5 +39,6 @@ C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.W
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\bin\System.Web.WebPages.xml
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb

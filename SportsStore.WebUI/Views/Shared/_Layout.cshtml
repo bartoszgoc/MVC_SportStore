@@ -12,7 +12,8 @@
         <div class ="title" >Sports shop</div>
     </div>
     <div id="categories">
-        To do later
+        @{ Html.RenderAction("Menu", "Nav"); }
+    </div>
     </div>
     <div id="content">
         @RenderBody()
