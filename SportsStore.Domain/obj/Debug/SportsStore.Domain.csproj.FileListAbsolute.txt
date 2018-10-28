@@ -1,3 +1,4 @@
+C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
@@ -16,6 +17,5 @@ C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.D
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\bin\Debug\Ninject.xml
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\bin\Debug\Ninject.Web.Common.xml
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\bin\Debug\Ninject.Web.Mvc.xml
-C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\Users\Bartosz\Documents\Visual Studio 2012\Projects\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
