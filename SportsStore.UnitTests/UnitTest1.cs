@@ -35,14 +35,14 @@ namespace SportsStore.UnitTests
             controller.PageSize = 3;
 
             //working
-            ProductsListViewModel result = (ProductsListViewModel)controller.List(2).Model;
+            ProductsListViewModel result = (ProductsListViewModel)controller.List(null,2).Model;
 
             //assert
 
             Product[] prodArray = result.Products.ToArray();
-            Assert.IsTrue(prodArray.Length == 2);
-            Assert.AreEqual(prodArray[0].Name, "P4");
-            Assert.AreEqual(prodArray[1].Name, "P5");
+            Assert.IsTrue(prodArray.Length == 3);
+            Assert.AreEqual(prodArray[0].Name, "p4");
+            Assert.AreEqual(prodArray[1].Name, "p5");
         }
 
         [TestMethod]
@@ -64,9 +64,7 @@ namespace SportsStore.UnitTests
             MvcHtmlString result = myHelper.PageLinks(pagingInfo, pageUrlDelegate);
 
             //asert
-            Assert.AreEqual(result.ToString(), @"< href=""Strona1"">1</a>"
-                + @"< href=""Strona2"">2</a>"
-                + @"< href=""Strona3"">3</a>");
+            Assert.AreEqual(result.ToString(), @"<a href=""Strona1"">1</a>"+@"<a class=""selected"" href=""Strona2"">2</a>"+@"<a href=""Strona3"">3</a>");
         }
 
         [TestMethod]
@@ -88,16 +86,39 @@ namespace SportsStore.UnitTests
             controller.PageSize = 3;
 
             //working
-            ProductsListViewModel result = (ProductsListViewModel)controller.List(2).Model;
+            ProductsListViewModel result = (ProductsListViewModel)controller.List(null, 2).Model;
 
 
             //asert
             PagingInfo pageInfo = result.PagingInfo;
             Assert.AreEqual(pageInfo.CurrentPage, 2);
-            Assert.AreEqual(pageInfo.CurrentPage, 3);
-            Assert.AreEqual(pageInfo.CurrentPage, 4);
-            Assert.AreEqual(pageInfo.CurrentPage, 6);
-            Assert.AreEqual(pageInfo.CurrentPage, 5);
+
+        }
+
+        [TestMethod]
+        public void Can_Filter_Products()
+        {
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[] {
+                new Product {ProductID = 1 , Name = "p1", Category = "cat1"},
+                new Product {ProductID = 2 , Name = "p2", Category = "cat2"},
+                new Product {ProductID = 3 , Name = "p3", Category = "cat2"},
+                new Product {ProductID = 4 , Name = "p4", Category = "cat4"},
+                new Product {ProductID = 5 , Name = "p5", Category = "cat5"},
+                new Product {ProductID = 6 , Name = "p6", Category = "cat6"}
+            }.AsQueryable());
+
+            //preparing
+            ProductController controller = new ProductController(mock.Object);
+            controller.PageSize = 3;
+
+            //working
+            Product[] result = ((ProductsListViewModel)controller.List("cat2", 1).Model).Products.ToArray();
+
+            //assert
+            Assert.AreEqual(result.Length, 2);
+            Assert.IsTrue(result[0].Name == "p2" && result[0].Category =="cat2");
+
         }
 
     }

@@ -8,9 +8,14 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
-
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+    <div id="header">
+        <div class ="title" >Sports shop</div>
+    </div>
+    <div id="categories">
+        To do later
+    </div>
+    <div id="content">
+        @RenderBody()
+    </div>
 </body>
 </html>
